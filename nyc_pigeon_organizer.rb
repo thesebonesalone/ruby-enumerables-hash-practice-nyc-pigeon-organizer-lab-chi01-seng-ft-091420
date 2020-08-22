@@ -17,10 +17,11 @@ def nyc_pigeon_organizer(data)
   
   data_hash.each do |index|
     data[:color].each do |index2|
-      puts index
+      if index = index2
+        index[:color] = index2
     end
   end
   
   
-  
+  puts data_hash
 end
