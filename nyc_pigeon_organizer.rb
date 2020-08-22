@@ -10,4 +10,13 @@ def nyc_pigeon_organizer(data)
     count += 1
   end
   puts name_array
+  data_hash = Hash.new
+  name_array.each do |index|
+    data_hash[index] = {:gender => [], :lives => [], :color => []}
+  end
+  puts data_hash
+  data_hash
+  
+  
+  
 end
