@@ -1,5 +1,6 @@
 def nyc_pigeon_organizer(data)
   name_array = []
-  puts data.flatten
-  
+  flat = data.flatten
+  flat = flat.flatten
+  puts flat.uniq
 end
