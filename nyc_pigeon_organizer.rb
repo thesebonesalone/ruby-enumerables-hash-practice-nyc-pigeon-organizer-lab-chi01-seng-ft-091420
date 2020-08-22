@@ -1,6 +1,13 @@
 def nyc_pigeon_organizer(data)
   name_array = []
   count = 0
-  name_array = data.values
-  puts name_array.flatten
+  data[:gender][:male].each do |index|
+    name_array[count] = index
+    count += 1
+  end
+  data[:gender][:female].each do |index|
+    name_array[count] = index
+    count += 1
+  end
+  puts name_array
 end
